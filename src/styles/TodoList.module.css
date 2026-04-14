@@ -1,0 +1,425 @@
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.totalBadge {
+  font-size: 13px;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+
+.filterBar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.searchBox {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  max-width: 340px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 9px 34px 9px 36px;
+  border: 1.5px solid #dde3f0;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  color: #1a1a2e;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 3px rgba(108,99,255,0.12);
+}
+
+.searchInput::placeholder {
+  color: #94a3b8;
+}
+
+.clearIcon {
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.15s;
+  line-height: 1;
+}
+
+.clearIcon:hover {
+  color: #ef4444;
+}
+
+.select {
+  padding: 9px 13px;
+  border: 1.5px solid #dde3f0;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  color: #334155;
+  cursor: pointer;
+  outline: none;
+  min-width: 140px;
+  transition: border-color 0.2s;
+}
+
+.select:focus {
+  border-color: #6c63ff;
+}
+
+.resetBtn {
+  padding: 8px 16px;
+  background: #f1f5f9;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.resetBtn:hover {
+  background: #fee2e2;
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+
+.tagRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ede9ff;
+  color: #574fd6;
+  padding: 4px 10px 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tag button {
+  background: none;
+  border: none;
+  color: #574fd6;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.tag button:hover {
+  opacity: 1;
+}
+
+.tableWrap {
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #f0f0f8;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background: #f0f2ff;
+  color: #4a4a7a;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 13px 16px;
+  text-align: left;
+  border-bottom: 2px solid #dde3f0;
+}
+
+.table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f8;
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr:hover td {
+  background: #fafafe;
+}
+
+.idCell {
+  color: #94a3b8 !important;
+  font-size: 12px !important;
+  width: 48px;
+}
+
+.titleCell {
+  max-width: 400px;
+}
+
+.badgeCompleted {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badgePending {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #fff3e0;
+  color: #e65100;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.empty {
+  padding: 60px 20px;
+  text-align: center;
+  color: #64748b;
+}
+
+.empty p {
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 24px;
+}
+
+.pageBtn {
+  padding: 7px 14px;
+  border: 1.5px solid #dde3f0;
+  border-radius: 8px;
+  background: #fff;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pageBtn:hover:not(:disabled) {
+  border-color: #6c63ff;
+  color: #6c63ff;
+}
+
+.pageBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pageNumbers {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.pageNum {
+  min-width: 34px;
+  height: 34px;
+  border: 1.5px solid #dde3f0;
+  border-radius: 8px;
+  background: #fff;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pageNum:hover {
+  border-color: #6c63ff;
+  color: #6c63ff;
+}
+
+.pageNumActive {
+  background: #6c63ff !important;
+  border-color: #6c63ff !important;
+  color: #fff !important;
+}
+
+.dots {
+  color: #94a3b8;
+  padding: 0 4px;
+  font-size: 14px;
+}
+
+.pageInfo {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 100px 20px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #6c63ff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.errorText {
+  color: #ef4444;
+}
+
+
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.idCell {
+  width: 60px;
+  color: #666;
+}
+
+.titleCell {
+  width: 100%;
+}
+
+.todoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.todoContent h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.byText {
+  margin: 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.completedText {
+  text-decoration: line-through;
+  text-decoration-color: green;
+  color: #555;
+}
+
+.completedRow {
+  border-left: 4px solid green;
+  background-color: #f8fff8;
+}
+
+.badgeCompleted {
+  background: #e6f9ec;
+  color: green;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.badgePending {
+  background: #fff4e5;
+  color: orange;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
