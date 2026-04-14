@@ -21,6 +21,7 @@
 .links {
   display: flex;
   gap: 4px;
+  flex-wrap: wrap; 
 }
 
 .link {
@@ -31,6 +32,7 @@
   font-size: 14px;
   font-weight: 500;
   transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
 }
 
 .link:hover {
@@ -42,3 +44,46 @@
   color: #fff !important;
   background: #6c63ff !important;
 }
+
+
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 16px;
+  }
+
+  .links {
+    gap: 2px;
+  }
+
+  .link {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .link {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .brand {
+    font-size: 15px;
+  }
+}
+
