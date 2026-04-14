@@ -13,10 +13,10 @@ Ensure you have **Node.js** (version 18 or higher) installed on your machine.
 ### 2. Clone & Installation
 ```bash
 # Clone the repository
-git clone <your-repository-link>
+git clone <https://github.com/Razu-Biswas/tform-app.git>
 
 # Enter the project directory
-cd app_name
+cd react-app-ts
 
 # Install dependencies
 npm install
